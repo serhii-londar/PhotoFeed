@@ -37,8 +37,8 @@ typealias JSONArray = [JSONDictionary]
 class APIClient {
     static let shared = APIClient()
     
-    private let clientId = "756f0b424b7f48e38c18c1200ad66752"
-    private let redirectUri = "http://raywenderlich.com"
+    private let clientId = "090227e6af034a0babb1d25de491adb9"
+    private let redirectUri = "https://git.io/vFrvp"
     
     var parameters: JSONDictionary {
         guard let accessToken = accessToken else {
