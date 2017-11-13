@@ -70,7 +70,7 @@ class APIClient {
         return URL(string: "https://api.instagram.com/oauth/authorize/?client_id=\(clientId)&redirect_uri=\(redirectUri)&response_type=token")!
     }
     
-    func loadMedia(userId: String = "self", maxId: String? = nil, minId: String? = nil, count: Int = 10, completion: @escaping ([Media]) -> Void) {
+    func loadMedia(userId: String = "self", maxId: String? = nil, minId: String? = nil, count: Int = 5, completion: @escaping ([Media]) -> Void) {
         var newParameters = parameters
         if let maxId = maxId {
             newParameters["MAX_ID"] = maxId
